@@ -1,0 +1,117 @@
+<main class="d-flex flex-nowrap h-100">
+  <h1 class="visually-hidden">Sidebars examples</h1>
+
+  <div
+    class="d-flex flex-column flex-shrink-0 p-3 text-white bg-light"
+    style="width: 280px"
+  >
+    <a
+      href="/"
+      class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
+    >
+      <img
+        src="../../assets/logo/download.png"
+        alt=""
+        width="50"
+        height="50"
+      /><span class="mx-2 fs-4">B2Brain</span>
+    </a>
+    <hr />
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a
+          routerLink="/dashboard/"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          class="nav-link text-white"
+          aria-current="page"
+        >
+          <i class="fa fa-home"></i>
+          Dashboard
+        </a>
+      </li>
+      <li>
+        <a
+          routerLink="/dashboard/intels"
+          [routerLinkActiveOptions]="{ exact: true }"
+          [routerLinkActive]="'active'"
+          class="nav-link text-white"
+        >
+          <i class="fa fa-star"></i>
+          Intels
+        </a>
+      </li>
+      <!-- <li>
+        <a class="nav-link text-white"><i class="fa fa-book"></i> Accounts </a>
+      </li> -->
+      <li class="my-2">
+        <mat-accordion>
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+            [expanded]="true"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title
+                ><span
+                  ><i class="fa fa-user" style="margin-right: 0.5em"></i>
+                  Accounts</span
+                >
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+
+            <a
+              routerLink="/dashboard/accounts/manage-all"
+              [routerLinkActiveOptions]="{ exact: true }"
+              [routerLinkActive]="'active'"
+              class="nav-link text-black"
+              ><i class="fa fa-book"></i> Manage All
+            </a>
+            <a
+              routerLink="/dashboard/accounts/track-new-accounts"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLinkActive="active"
+              class="nav-link text-black"
+              ><i class="fa fa-book"></i> Track new accounts
+            </a>
+            <a class="nav-link text-black"
+              ><i class="fa fa-book"></i> Bulk imports
+            </a>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </li>
+      <li>
+        <mat-accordion>
+          <mat-expansion-panel
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false"
+            [expanded]="true"
+          >
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                <i class="fa fa-gear" style="margin-right: 0.5em"></i>
+                Preferences
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p>Product Focus</p>
+            <p>Intel Preferences</p>
+            <p>Lead Persona</p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </li>
+      <li>
+        <a class="nav-link text-white"
+          ><i class="fa fa-link"></i> Integrations
+        </a>
+      </li>
+      <li>
+        <a class="nav-link text-white"><i class="fa fa-gear"></i> Teams </a>
+      </li>
+      <li>
+        <a class="nav-link text-white"
+          ><i class="fa fa-gear"></i> Help/Support
+        </a>
+      </li>
+    </ul>
+  </div>
+</main>

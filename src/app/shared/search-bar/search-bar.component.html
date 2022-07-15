@@ -1,0 +1,15 @@
+<main>
+  <mat-form-field appearance="fill" class="w-100">
+    <mat-label>Search</mat-label>
+    <input
+      [formControl]="searchControl"
+      matInput
+      [placeholder]="placeholder"
+      (keyup.enter)="searchEventEmit()"
+    />
+    <mat-icon matSuffix (click)="searchControl.setValue('')">close</mat-icon>
+    <mat-error *ngIf="searchControl.invalid"
+      >Please Enter Search Text</mat-error
+    >
+  </mat-form-field>
+</main>
