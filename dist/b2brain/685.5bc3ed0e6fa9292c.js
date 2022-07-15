@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkb2brain=self.webpackChunkb2brain||[]).push([[685],{9685:(r,l,o)=>{o.r(l),o.d(l,{IntelsModule:()=>u});var c=o(6895),t=o(4650);let u=(()=>{class n{}return n.\u0275fac=function(e){return new(e||n)},n.\u0275mod=t.oAB({type:n}),n.\u0275inj=t.cJS({imports:[c.ez]}),n})()}}]);
